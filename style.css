@@ -7,17 +7,59 @@ body{
   background:linear-gradient(160deg , rgb(59, 49, 247), rgb(105, 11, 255),rgb(121, 27, 203),rgb(90, 13, 157));
 }
 .submitForm{
+  position: absolute;
   display: flex;
+  top: 20%;
+  left: 30%;
   justify-content: center;
   align-items: center;
  flex-direction: column;
- 
+ width: 540px;
+ max-width: 1000px;
   border: 2px solid black;
 }
-.content{
+
+.header{
   display: flex;
   gap: 1.5rem;
   max-width: 540px;
   height: auto;
   border: 2px solid yellow;
+}
+.content-input{
+  padding-left: 20px;
+  border: 2px solid grey;
+  border-radius: 20px;
+  background: transparent;
+  outline: none;
+
+}
+.content-input:focus{
+  border-color: grey;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.items{
+  max-width: 540px;
+  width: 80%;
+}
+.items .task {
+ width: 100%;
+  gap: 1.5rem;
+  display:  flex;
+  
+  justify-content: space-between ;
+ align-items: center;
+  
+  
+}
+.list-button{
+  width: 30px;
+  border: 2px solid black;
 }
