@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body{
   background:linear-gradient(160deg , rgb(59, 49, 247), rgb(105, 11, 255),rgb(121, 27, 203),rgb(90, 13, 157));
@@ -26,25 +27,44 @@ body{
   height: auto;
   border: 2px solid yellow;
 }
-.content-input{
-  padding-left: 20px;
-  border: 2px solid grey;
-  border-radius: 20px;
-  background: transparent;
-  outline: none;
-
-}
-.content-input:focus{
-  border-color: grey;
-}
 
 .content{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  background-color: rgba(201, 200, 200, 0.235);
+  color: white;
+  border-radius: 30px;
 
 }
+.content input{
+  flex: 1;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.content input::placeholder{
+  color: white;
+  opacity: 1;
+}
+
+.content button{
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(147, 103, 21);
+  padding: 10px ;
+  border: none;
+  outline: none;  
+  border-radius: 20px;
+  width: 100px ;
+
+}
+
+
 .items{
   max-width: 540px;
   width: 80%;
@@ -57,7 +77,21 @@ body{
   justify-content: space-between ;
  align-items: center;
   
-  
+}
+.task::before{
+  content: "";
+  background-image: url("./images/unchecked.png");
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.task.checked{
+  text-decoration: line-through;
+}
+.task.checked::before{
+  background-image: url("./images/checked.png");
 }
 .list-button{
   width: 30px;
