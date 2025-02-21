@@ -7,7 +7,7 @@
 body{
   background:linear-gradient(160deg , rgb(59, 49, 247), rgb(105, 11, 255),rgb(121, 27, 203),rgb(90, 13, 157));
 }
-.submitForm{
+.InputForm{
   position: absolute;
   display: flex;
   top: 20%;

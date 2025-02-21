@@ -9,28 +9,27 @@
 </head>
 
 <body>
-  <form action="" method="get" class="submitForm">
+  <form action="" method="get" class="InputForm">
     <div class="header">
       <h2>To-do list</h2>
       <img src="./images/icon.png" alt="" width="20px" height="20px">
     </div>
     <div class="content">
-      <input type="text" placeholder="Enter the task..." class="content-input">
+      <input type="text" name="task" placeholder="Enter the task..." class="content-input">
       <button type="submit" class="addBtn">Add task</button>
     </div>
-    <ul class="items">
-      <li class="task checked">task 1
+  </form>
+  <ul class="items content">
+    <li class="task checked">task 1
+      <i class="fa-solid fa-xmark"></i>
+      </li>
+      <li class="task checked">task 2
         <i class="fa-solid fa-xmark"></i>
         </li>
-        <li class="task checked">task 2
+        <li class="task checked">task 3
           <i class="fa-solid fa-xmark"></i>
           </li>
-          <li class="task checked">task 3
-            <i class="fa-solid fa-xmark"></i>
-            </li>
-    </ul>
-
-  </form>
+  </ul>
  
   <script src="script.js"></script>
 </body>
