@@ -10,7 +10,7 @@ body{
 .taskManager{
   position: absolute;
   top: 10%;
-  left: 30%;
+  left: 30%;  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,11 +76,11 @@ body{
 }
 
 
-.items{
+.taskContainer{
   max-width: 540px;
   width: 80%;
 }
-.items .task {
+.taskContainer .task {
  width: 100%;
   gap: 1.5rem;
   display:  flex;
@@ -103,8 +103,4 @@ body{
 }
 .task.checked::before{
   background-image: url("./images/checked.png");
-}
-.list-button{
-  width: 30px;
-  border: 2px solid black;
 }

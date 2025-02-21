@@ -1,5 +1,8 @@
-const inputForm=document.querySelector(".submitForm");
+document.addEventListener("DOMContentLoaded",()=>{
+  const inputForm=document.querySelector(".InputForm");
 inputForm.addEventListener("submit",(e)=>{
   e.preventDefault();
-  console.log(e)
+})
+
+
 })
