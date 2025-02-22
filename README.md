@@ -14,7 +14,7 @@ A simple, responsive to-do list application that lets users add tasks, mark them
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Future Improvements](#future-improvements)
-- [License](#license)
+
 
 ---
 
