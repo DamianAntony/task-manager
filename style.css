@@ -34,10 +34,13 @@ body{
 
 .header{
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1.5rem;
   max-width: 540px;
   height: auto;
-  border: 2px solid yellow;
+  padding: 10px;
+ 
 }
 
 .content{
@@ -50,6 +53,9 @@ body{
   border-radius: 30px;
 
 }
+
+/* -webkit-autofill is to correct the default styling occured for input when using previous values*/
+
 .content-input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #edeef0 inset !important;
   -webkit-text-fill-color: #949494 !important;
@@ -89,8 +95,9 @@ body{
 }
 .taskContainer .task {
  width: 100%;
-  gap: 1.5rem;
+ gap: 1.5rem;
   display:  flex;
+  margin: 10px;
   
   justify-content: space-between ;
  align-items: center;
